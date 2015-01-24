@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>jQuery UI Button - Default functionality</title>
+    <link rel="stylesheet" href="../js_pkgs/ui/themes/trontastic.css">
+    <script src="../js_pkgs/jquery-2.1.3.min.js"></script>
+    <script src="../js_pkgs/ui/jquery-ui.min.js"></script>
+    <script>
+      $(function() {
+      $( "input[type=submit], a, button" )
+      .button()
+      .click(function( event ) {
+      event.preventDefault();
+      });
+      });
+    </script>
+  </head>
+  <body>
+    <button>A button element</button>
+    <input type="submit" value="A submit button">
+    <a href="#">An anchor</a>
+  </body>
+</html>
